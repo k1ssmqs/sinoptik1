@@ -1,4 +1,4 @@
-const apiKey = 'ТВОЙ_API_КЛЮЧ';
+const apiKey = b9ffb1dd96b1045c1f4f4db74bce9a0f;
 
 function setWeatherBackground(weather) {
   const body = document.body;

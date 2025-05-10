@@ -1,25 +1,25 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <title>Synoptic</title>
-        <link rel="stylesheet" href="style.css">
-    </head>
-    <body class="def">
-        <div class="weather-site">
-            <div class="search-bar">
-                <input type="text" id="searchInput" placeholder="Пошук міста..." onkeydown="searchCity(event)">
-            </div>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Прогноз погоди</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="app">
+    <h1>Прогноз погоди</h1>
+    <h2 id="cityName"></h2>
+    <input type="text" id="cityInput" placeholder="Введіть місто...">
+    <button onclick="searchWeather()">Пошук</button>
 
-            <div class="weather-info">
-                <h2 id="cityName">Завантаження...</h2>
-                <div id="temperature">--°C</div>
-                <div id="weatherDesc"></div>
-            </div>
+    <div id="weatherContainer"></div>
+    <div id="map"></div>
+  </div>
 
-            <div class="forecast" id="forecast">
-                
-            </div>
-        </div>
-
-    </body>
+  <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+  <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+  <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+  <script src="script.js"></script>
+</body>
 </html>
